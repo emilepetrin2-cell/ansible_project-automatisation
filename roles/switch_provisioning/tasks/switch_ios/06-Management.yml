@@ -1,0 +1,13 @@
+---
+- name: MANAGEMENT PHASE - Configuration globale (DNS disable & NTP)
+  cisco.ios.ios_config:
+    lines:
+      - no ip domain lookup
+      - ntp server 216.239.35.0
+
+- name: MANAGEMENT PHASE - Configuration du confort CLI (Console)
+  cisco.ios.ios_config:
+    lines:
+      - logging synchronous
+      - exec-timeout 5 0
+    parents: line con 0
