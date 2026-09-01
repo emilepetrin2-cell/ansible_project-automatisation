@@ -1,6 +1,13 @@
-                                                                                        august 31
-J'ai commencer à penser à un algorithme qui permettrait de pouvoir voir les menaces au réseau et de pouvoir les annulés en moins d'une milisconde. 
+## 31 août 2026
 
-j'ai eu comme difficulter à trouver l'algorithme a utiliser pour ce problème précis.
+### Objectif
+Concevoir un algorithme de détection et de mitigation d'anomalies réseau à très faible latence (< 1 ms).
 
-À faire: commencer l'algorthme en c++ et structurer les dossiers.
+### Réflexions & Problématique
+* **Cible :** Détection d'attaques volumétriques (ex. SYN flood / DoS L4) ou de balayages de ports anormaux.
+* **Défi algorithmique :** Trouver une structure de données capable de traiter les paquets à la volée sans bloquer le débit (compromis entre table de hachage en mémoire, fenêtres glissantes et filtrage probabiliste type Bloom Filter / Count-Min Sketch).
+* **Contrainte de performance :** L'analyse et l'action de filtrage (drop) doivent s'exécuter sous la barre de la milliseconde pour éviter la saturation du buffer.
+
+### Prochaines étapes
+1. Définir l'architecture du projet et la structure des dossiers du dépôt C++.
+2. Implémenter un premier banc d'essai pour mesurer la latence d'ingestion des paquets.
