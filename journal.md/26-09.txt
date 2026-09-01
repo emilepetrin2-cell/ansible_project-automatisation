@@ -1,0 +1,6 @@
+                                                                                        august 31
+J'ai commencer à penser à un algorithme qui permettrait de pouvoir voir les menaces au réseau et de pouvoir les annulés en moins d'une milisconde. 
+
+j'ai eu comme difficulter à trouver l'algorithme a utiliser pour ce problème précis.
+
+À faire: commencer l'algorthme en c++ et structurer les dossiers.
